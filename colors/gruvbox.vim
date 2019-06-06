@@ -592,14 +592,14 @@ hi! link Operator Normal
 hi! link Keyword GruvboxRed
 
 " Variable name
-hi! link Identifier GruvboxBlue
+hi! link Identifier GruvboxYellow
 " Function name
 hi! link Function GruvboxGreenBold
 
 " Generic preprocessor
 hi! link PreProc GruvboxAqua
 " Preprocessor #include
-hi! link Include GruvboxAqua
+hi! link Include GruvboxRed
 " Preprocessor #define
 hi! link Define GruvboxAqua
 " Same as Define
@@ -1152,18 +1152,70 @@ hi! link javascriptAwaitFuncKeyword GruvboxRed
 " }}}
 " PanglossJS: {{{
 
-hi! link jsClassKeyword GruvboxAqua
-hi! link jsExtendsKeyword GruvboxAqua
-hi! link jsExportDefault GruvboxAqua
-hi! link jsTemplateBraces GruvboxAqua
-hi! link jsGlobalNodeObjects GruvboxFg1
-hi! link jsGlobalObjects GruvboxFg1
-hi! link jsFunction GruvboxAqua
-hi! link jsFuncParens GruvboxFg3
-hi! link jsParens GruvboxFg3
-hi! link jsNull GruvboxPurple
-hi! link jsUndefined GruvboxPurple
+hi! link jsDot Normal
+"hi! link jsObjectProp GruvbuxRed
+hi! link jsFuncCall GruvboxAqua 
+hi! link jsParensError GruvboxRed
+
+" Program Keywords
+hi! link jsStorageClass GruvboxRed
+hi! link jsVariableDef GruvboxBlue
+hi! link jsOperatorKeyword GruvboxAqua
+hi! link jsOperator GruvboxAqua
+hi! link jsBooleanTrue GruvboxPink
+hi! link jsBooleanFalse GruvboxPink
+
+" Modules
+hi! link jsImport GruvboxRed
+hi! link jsExport GruvboxRed
+hi! link jsModuleKeyword GruvboxBlue
+hi! link jsExportDefault GruvboxRed
+hi! link jsExportDefaultGroup GruvboxRed
+hi! link jsModuleAsterisk GruvboxPink
+hi! link jsModuleAs GruvboxRed
+hi! link jsFrom GruvboxRed
+hi! link jsModuleComma Normal
+
+" Strings, Templates, Numbers
+hi! link jsString GruvboxGreen
+hi! link jsTemplateString GruvboxGreen
+hi! link jsTaggedTemplate GruvboxGreen
+hi! link jsNumber GruvboxPink
+hi! link jsFloat GruvboxPink
+
+" Statement Keywords
+hi! link jsStatement GruvboxRed
+hi! link jsConditional GruvboxRed
+hi! link jsRepeat GruvboxRed
+hi! link jsDo GruvboxRed
+hi! link jsSwitchCase GruvboxRed
+hi! link jsTry GruvboxRed
+hi! link jsFinally GruvboxRed
+hi! link jsCatch GruvboxRed
+hi! link jsException GruvboxRed
+hi! link jsAsyncKeyword GruvboxRed
+hi! link jsSwitchColon Normal 
+
+" Keywords
+hi! link jsGlobalObjects GruvboxYellow
+hi! link jsGlobalNodeObjects GruvboxYellow
+hi! link jsExceptions GruvboxYellow
+hi! link jsBuiltins GruvboxAqua
+hi! link jsFutureKeys GruvboxBlue
+hi! link jsGlobalObjects GruvboxYellow
+hi! link jsExceptions GruvboxYellow
+hi! link jsDomErrNo GruvboxYellow
+hi! link jsDomNodeConsts GruvboxYellow
+
+" Classes
+hi! link jsClassKeyword GruvboxRed
+hi! link jsExtendsKeyword GruvboxRed
+hi! link jsClassProperty GruvboxBlue
 hi! link jsClassDefinition GruvboxYellow
+
+" Decorators
+hi! link jsDecorator Normal
+hi! link jsDecoratorFunction GruvboxBlue
 
 " }}}
 " TypeScript: {{{
