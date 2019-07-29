@@ -541,7 +541,7 @@ hi! link WarningMsg GruvboxRedBold
 " Gutter: {{{
 
 " Line number for :number and :# commands
-call s:HL('LineNr', s:bg4, s:number_column)
+call s:HL('LineNr', s:gray, s:number_column)
 
 " Column where signs are displayed
 call s:HL('SignColumn', s:none, s:sign_column)
@@ -1154,7 +1154,7 @@ hi! link javascriptAwaitFuncKeyword GruvboxRed
 
 hi! link jsDot Normal
 "hi! link jsObjectProp GruvbuxRed
-hi! link jsFuncCall GruvboxAqua 
+hi! link jsFuncCall GruvboxAqua
 hi! link jsParensError GruvboxRed
 
 " Program Keywords
@@ -1194,7 +1194,7 @@ hi! link jsFinally GruvboxRed
 hi! link jsCatch GruvboxRed
 hi! link jsException GruvboxRed
 hi! link jsAsyncKeyword GruvboxRed
-hi! link jsSwitchColon Normal 
+hi! link jsSwitchColon Normal
 
 " Keywords
 hi! link jsGlobalObjects GruvboxYellow
