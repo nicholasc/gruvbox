@@ -310,7 +310,7 @@ if exists('g:gruvbox_number_column')
   let s:number_column = get(s:gb, g:gruvbox_number_column)
 endif
 
-let s:sign_column = s:bg1
+let s:sign_column = s:bg0
 
 if exists('g:gitgutter_override_sign_column_highlight') &&
       \ g:gitgutter_override_sign_column_highlight == 1
@@ -748,8 +748,14 @@ let g:niji_light_colours = g:rbpt_colorpairs
 "}}}
 " GitGutter: {{{
 
+let g:gitgutter_sign_added = '│'
+let g:gitgutter_sign_modified = '│'
+let g:gitgutter_sign_removed = '‣'
+let g:gitgutter_sign_removed_first_line = '^^'
+let g:gitgutter_sign_modified_removed = '*'
+
 hi! link GitGutterAdd GruvboxGreenSign
-hi! link GitGutterChange GruvboxAquaSign
+hi! link GitGutterChange GruvboxYellowSign
 hi! link GitGutterDelete GruvboxRedSign
 hi! link GitGutterChangeDelete GruvboxAquaSign
 
@@ -1212,6 +1218,7 @@ hi! link jsClassKeyword GruvboxRed
 hi! link jsExtendsKeyword GruvboxRed
 hi! link jsClassProperty GruvboxBlue
 hi! link jsClassDefinition GruvboxYellow
+hi! link jsClassMethodType GruvboxRed
 
 " Decorators
 hi! link jsDecorator Normal
